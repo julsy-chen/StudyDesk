@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --dark-text: #0000;
     --light-body: #f3f8fe;
@@ -11,6 +12,8 @@
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --font-family: consolas;
   }
+=======
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +22,11 @@
 html, body{
     place-items: center;
     font-family: var(--font-family);
+<<<<<<< HEAD
     background:linear-gradient(to right, #9796f0, #fbc7d4);
+=======
+    background: #fff;
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     overflow: hidden;
 }
 .container{
@@ -40,7 +47,11 @@ html, body{
     background-color: white;
     border-radius: 25px;
     overflow: hidden;
+<<<<<<< HEAD
     padding: 30px 100px 0px 50px;
+=======
+    padding: 30px 50px 0px 50px;
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     box-shadow: var(--shadow);
 }
 .calendar-header{
@@ -77,7 +88,11 @@ html, body{
     display:grid;
     grid-template-columns: repeat(7,1fr);
     gap: 2px;
+<<<<<<< HEAD
     color: black;
+=======
+    color: var(--color-txt);
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
 }
 .calendar-days div{
     width:37px;
@@ -96,7 +111,11 @@ html, body{
     cursor: pointer;
 }
 .month-picker:hover{
+<<<<<<< HEAD
     color: black;
+=======
+    color: var(--color-txt);
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
 }
 .year-picker{
     display:flex;
@@ -124,16 +143,22 @@ html, body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+<<<<<<< HEAD
     color: black;
+=======
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
 }
 #year:hover{
     cursor: pointer;
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
 }
+<<<<<<< HEAD
 .calendar-days{
     color: black;
 }
+=======
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
 .calendar-days div span{
     position: absolute;
 }
@@ -179,12 +204,20 @@ html, body{
 .month-list.hideonce{
     visibility: hidden;
   }
+<<<<<<< HEAD
   .month-list.hide{
+=======
+  .month-list.hide {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     animation: to-right 1s forwards;
     visibility: none;
     pointer-events: none;
   }
+<<<<<<< HEAD
   .date-time-formate{
+=======
+  .date-time-formate {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     width: max-content;
     height: max-content;
     font-family: Dubai Light, Century Gothic;
@@ -193,7 +226,11 @@ html, body{
     top: 140px;
     justify-content: center;
   }
+<<<<<<< HEAD
   .day-text-formate{
+=======
+  .day-text-formate {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     font-family: Microsoft JhengHei UI;
     font-size: 1.4rem;
     padding-right: 5%;
@@ -201,7 +238,11 @@ html, body{
     position: absolute;
     left: -1rem;
   }
+<<<<<<< HEAD
   .date-time-value{
+=======
+  .date-time-value {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     display: block;
     height: max-content;
     width: max-content;
@@ -210,6 +251,7 @@ html, body{
     top: -18px;
     text-align: center;
   }
+<<<<<<< HEAD
   .time-formate{
     font-size: 1.5rem;
   }
@@ -220,11 +262,24 @@ html, body{
     animation: hidetime 1.5s forwards;
   }
   .date-formate.hideTime{
+=======
+  .time-formate {
+    font-size: 1.5rem;
+  }
+  .time-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+  }
+  .day-text-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+  }
+  .date-formate.hideTime {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     animation: hidetime 1.5s forwards;
   }
   .day-text-formate.showtime{
     animation: showtime 1s forwards;
   }
+<<<<<<< HEAD
   .time-formate.showtime{
     animation: showtime 1s forwards;
   }
@@ -232,6 +287,15 @@ html, body{
     animation: showtime 1s forwards;
   }
   @keyframes to-top{
+=======
+  .time-formate.showtime {
+    animation: showtime 1s forwards;
+  }
+  .date-formate.showtime {
+    animation: showtime 1s forwards;
+  }
+  @keyframes to-top {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     0% {
       transform: translateY(0);
       opacity: 0;
@@ -241,7 +305,11 @@ html, body{
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   @keyframes to-left{
+=======
+  @keyframes to-left {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     0% {
       transform: translatex(230%);
       opacity: 1;
@@ -251,7 +319,11 @@ html, body{
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   @keyframes to-right{
+=======
+  @keyframes to-right {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     10% {
       transform: translatex(0);
       opacity: 1;
@@ -261,7 +333,11 @@ html, body{
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   @keyframes showtime{
+=======
+  @keyframes showtime {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     0% {
       transform: translatex(250%);
       opacity: 1;
@@ -271,7 +347,11 @@ html, body{
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   @keyframes hidetime{
+=======
+  @keyframes hidetime {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     0% {
       transform: translatex(0%);
       opacity: 1;
@@ -281,7 +361,11 @@ html, body{
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   @media (max-width:375px){
+=======
+  @media (max-width:375px) {
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
     .month-list>div{
       margin: 5px 0px;
     }

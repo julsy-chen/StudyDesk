@@ -23,20 +23,35 @@ const isLeapYear = (year) => {
     'December',
   ];
   let month_picker = document.querySelector('#month-picker');
+<<<<<<< HEAD
   const dayTextFormat = document.querySelector('.day-text-format');
   const timeFormat = document.querySelector('.time-format');
   const dateFormat = document.querySelector('.date-format');
+=======
+  const dayTextFormate = document.querySelector('.day-text-formate');
+  const timeFormate = document.querySelector('.time-formate');
+  const dateFormate = document.querySelector('.date-formate');
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
   
   month_picker.onclick = () => {
     month_list.classList.remove('hideonce');
     month_list.classList.remove('hide');
     month_list.classList.add('show');
+<<<<<<< HEAD
     dayTextFormat.classList.remove('showtime');
     dayTextFormat.classList.add('hidetime');
     timeFormat.classList.remove('showtime');
     timeFormat.classList.add('hideTime');
     dateFormat.classList.remove('showtime');
     dateFormat.classList.add('hideTime');
+=======
+    dayTextFormate.classList.remove('showtime');
+    dayTextFormate.classList.add('hidetime');
+    timeFormate.classList.remove('showtime');
+    timeFormate.classList.add('hideTime');
+    dateFormate.classList.remove('showtime');
+    dateFormate.classList.add('hideTime');
+>>>>>>> 24b3b689f877f0df41a86d1e8806fdb109cdf29e
   };
   
   const generateCalendar = (month, year) => {
