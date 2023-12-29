@@ -1,3 +1,16 @@
+:root{
+    --dark-text: #0000;
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #f0f0f0;
+    --light-text: #151426;
+    --light-btn: #9796f0;
+    --blue: #0000ff;
+    --white: #fff;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family: consolas;
+  }
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +19,7 @@
 html, body{
     place-items: center;
     font-family: var(--font-family);
-    background: #fff;
+    background:linear-gradient(to right, #9796f0, #fbc7d4);
     overflow: hidden;
 }
 .container{
@@ -27,7 +40,7 @@ html, body{
     background-color: white;
     border-radius: 25px;
     overflow: hidden;
-    padding: 30px 50px 0px 50px;
+    padding: 30px 100px 0px 50px;
     box-shadow: var(--shadow);
 }
 .calendar-header{
@@ -64,7 +77,7 @@ html, body{
     display:grid;
     grid-template-columns: repeat(7,1fr);
     gap: 2px;
-    color: var(--color-txt);
+    color: black;
 }
 .calendar-days div{
     width:37px;
@@ -83,7 +96,7 @@ html, body{
     cursor: pointer;
 }
 .month-picker:hover{
-    color: var(--color-txt);
+    color: black;
 }
 .year-picker{
     display:flex;
@@ -111,11 +124,15 @@ html, body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    color: black;
 }
 #year:hover{
     cursor: pointer;
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
+}
+.calendar-days{
+    color: black;
 }
 .calendar-days div span{
     position: absolute;
@@ -162,12 +179,12 @@ html, body{
 .month-list.hideonce{
     visibility: hidden;
   }
-  .month-list.hide {
+  .month-list.hide{
     animation: to-right 1s forwards;
     visibility: none;
     pointer-events: none;
   }
-  .date-time-formate {
+  .date-time-formate{
     width: max-content;
     height: max-content;
     font-family: Dubai Light, Century Gothic;
@@ -176,7 +193,7 @@ html, body{
     top: 140px;
     justify-content: center;
   }
-  .day-text-formate {
+  .day-text-formate{
     font-family: Microsoft JhengHei UI;
     font-size: 1.4rem;
     padding-right: 5%;
@@ -184,7 +201,7 @@ html, body{
     position: absolute;
     left: -1rem;
   }
-  .date-time-value {
+  .date-time-value{
     display: block;
     height: max-content;
     width: max-content;
@@ -193,28 +210,28 @@ html, body{
     top: -18px;
     text-align: center;
   }
-  .time-formate {
+  .time-formate{
     font-size: 1.5rem;
   }
-  .time-formate.hideTime {
+  .time-formate.hideTime{
     animation: hidetime 1.5s forwards;
   }
-  .day-text-formate.hidetime {
+  .day-text-formate.hidetime{
     animation: hidetime 1.5s forwards;
   }
-  .date-formate.hideTime {
+  .date-formate.hideTime{
     animation: hidetime 1.5s forwards;
   }
   .day-text-formate.showtime{
     animation: showtime 1s forwards;
   }
-  .time-formate.showtime {
+  .time-formate.showtime{
     animation: showtime 1s forwards;
   }
-  .date-formate.showtime {
+  .date-formate.showtime{
     animation: showtime 1s forwards;
   }
-  @keyframes to-top {
+  @keyframes to-top{
     0% {
       transform: translateY(0);
       opacity: 0;
@@ -224,7 +241,7 @@ html, body{
       opacity: 1;
     }
   }
-  @keyframes to-left {
+  @keyframes to-left{
     0% {
       transform: translatex(230%);
       opacity: 1;
@@ -234,7 +251,7 @@ html, body{
       opacity: 1;
     }
   }
-  @keyframes to-right {
+  @keyframes to-right{
     10% {
       transform: translatex(0);
       opacity: 1;
@@ -244,7 +261,7 @@ html, body{
       opacity: 1;
     }
   }
-  @keyframes showtime {
+  @keyframes showtime{
     0% {
       transform: translatex(250%);
       opacity: 1;
@@ -254,7 +271,7 @@ html, body{
       opacity: 1;
     }
   }
-  @keyframes hidetime {
+  @keyframes hidetime{
     0% {
       transform: translatex(0%);
       opacity: 1;
@@ -264,7 +281,7 @@ html, body{
       opacity: 1;
     }
   }
-  @media (max-width:375px) {
+  @media (max-width:375px){
     .month-list>div{
       margin: 5px 0px;
     }
